@@ -2,21 +2,21 @@
 
 ### TinyHttpd源码学习，加上了自己理解的注释
 ### Note
-1 原来的执行CGI脚本的函数： execl(...) 编译报错，改为：execl(path, query_string, NULL); 
-2 makefile中需要使用-pthread，而不是-lpthread
-3 WSL中需要 install libcgi-pm-perl 安装CGI模块
+- 原来的执行CGI脚本的函数： execl(...) 编译报错，改为：execl(path, query_string, NULL); 
+- makefile中需要使用-pthread，而不是-lpthread
+- WSL中需要 install libcgi-pm-perl 安装CGI模块
 
 ### Issue
 <p>启动服务器后，在浏览器端可以正常观察到背景颜色的改变</p>
 <p>但启动客户端却没有任何反应，目前还没搞清楚原因</p>
 
 references:
-https://phenix3443.github.io/notebook/c/tinyhttpd-analysis.html
-https://github.com/EZLippi/Tinyhttpd
+1. https://phenix3443.github.io/notebook/c/tinyhttpd-analysis.html
+2. https://github.com/EZLippi/Tinyhttpd
 
 
 
-以下内容源自https://github.com/EZLippi/Tinyhttpd
+<p>以下内容源自https://github.com/EZLippi/Tinyhttpd</p>
 测试CGI时需要本机安装PERL，同时安装perl-cgi
 ### Prepare 
 Compile for Linux
