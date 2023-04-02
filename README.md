@@ -10,12 +10,10 @@
 <p>启动服务器后，在浏览器端可以正常观察到背景颜色的改变</p>
 <p>但启动客户端却没有任何反应，目前还没搞清楚原因</p>
 
-references:
+### References:
 1. https://phenix3443.github.io/notebook/c/tinyhttpd-analysis.html
 2. https://github.com/EZLippi/Tinyhttpd
-
-
-
+<p><br></p>
 <p>以下内容源自https://github.com/EZLippi/Tinyhttpd</p>
 测试CGI时需要本机安装PERL，同时安装perl-cgi
 ### Prepare 
